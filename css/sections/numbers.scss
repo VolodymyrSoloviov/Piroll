@@ -1,0 +1,59 @@
+.numbers {
+	height: 240px;
+	background-color: #10c9c3;
+	padding-top: 102px;
+}
+
+.numbers__list {
+	width: 100%;
+	text-align: justify;
+
+	&:after {
+		content:"";
+		width: 100%;
+		display: inline-block;
+		height: 0px;
+	}
+}
+
+.numbers__item {
+	display: inline-block;
+	color: $white;
+}
+
+.numbers__icon,
+.numbers__info {
+	display: inline-block;
+}
+
+.numbers__icon {
+	height: 40px;
+	width: 40px;
+	margin-right: 28px;
+	background: center center no-repeat;
+}
+
+.numbers__icon_portfolio {
+	background-image: url("../img/icons/portfolio.png");
+}
+
+.numbers__icon_clock {
+	background-image: url("../img/icons/clock.png");
+}
+
+.numbers__icon_star {
+	background-image: url("../img/icons/star.png");
+}
+
+.numbers__icon_like {
+	background-image: url("../img/icons/like.png");
+}
+
+.numbers__amount {
+	font-size: 18px;
+}
+
+.numbers__text {
+	font-size: 12px;
+	text-transform: uppercase;
+}

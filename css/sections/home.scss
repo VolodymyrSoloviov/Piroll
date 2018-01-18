@@ -1,0 +1,95 @@
+.home {
+	height: 670px;
+	padding-top: 38px;
+	background: url(../img/bg/notebook.jpg) no-repeat #e9e9e9;
+	background-size: cover;
+}
+
+.container,
+.header__top {
+	@extend %clearfix;
+}
+
+.logo {
+	float: left;
+	width: 5%;
+}
+
+.logo__link {
+	display: block;
+	height: 25px;
+	width: 31px;
+	background-image: url("../img/icons/logo.png");
+}
+
+.menu {
+	float: right;
+	width: 95%;
+	text-align: right;
+}
+
+.menu__item {
+	display: inline-block;
+	margin-left: 30px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.menu__link {
+	color: $black;
+	font-size: 12px;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: .3s;
+
+	&:hover {
+		color: #10c9c3;
+	}
+}
+
+.active {
+	color: #10c9c3;
+}
+
+.banner {
+	float: right;
+	margin-top: 172px;
+	width: 480px;
+	text-align: left;
+}
+
+.banner__title {
+	font-size: 38px;
+	color: $dark-black;
+	margin-bottom: 30px;
+}
+
+.banner__text {
+	font-family: 'nunito_sansregular';
+	font-size: 18px;
+	line-height: 28px;
+	color: $gray;
+	margin-bottom: 30px;
+}
+
+.banner__button {
+	width: 180px;
+}
+
+.banner__btn {
+	font-size: 12px;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $white;
+	background-color: #10c9c3;
+	padding: 20px 45px;
+	transition: .3s;
+
+	&:hover {
+		background-color: #1fada8;
+	}
+}
