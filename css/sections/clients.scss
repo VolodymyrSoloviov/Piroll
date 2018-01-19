@@ -1,0 +1,40 @@
+.clients {
+	height: 200px;
+	padding-top: 65px;
+}
+
+.clients__list {
+	width: 100%;
+  text-align: justify;
+
+  &:after {
+		content:"";
+		width: 100%;
+		display: inline-block;
+		height: 0px;
+	}
+}
+
+.clients__item {
+	display: inline-block;
+	height: 72px;
+	width: 130px;
+	background: center center no-repeat;
+	vertical-align: middle;
+}
+
+.clients__item_handmade {
+	background-image: url("../img/content/clients/handmade.png");
+}
+
+.clients__item_mountain {
+	background-image: url("../img/content/clients/mountain.png");
+}
+
+.clients__item_collection {
+	background-image: url("../img/content/clients/collection.png");
+}
+
+.clients__item_mountainbike {
+	background-image: url("../img/content/clients/mountainbike.png");
+}
