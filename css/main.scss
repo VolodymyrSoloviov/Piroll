@@ -7,7 +7,9 @@ $black000: #000;
 $black: #191919;
 $dark-black: #1d1d1d;
 $gray: #787878;
+$lite-gray: #8e8e8e;
 $white: #fff;
+
 //layout
 @import "layout/normalize";
 @import "layout/adjustment";
@@ -18,7 +20,10 @@ $white: #fff;
 @import "sections/about";
 @import "sections/skills";
 @import "sections/numbers";
-
+@import "sections/work";
+@import "sections/process";
+@import "sections/services";
+@import "sections/testimonials";
 
 // media
 @import "media/desktop";

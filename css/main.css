@@ -442,7 +442,7 @@ h6 {
   font-weight: normal; }
 
 .container:after,
-.header__top:after, .skills:after {
+.header__top:after, .skills:after, .work__list:after {
   content: "";
   display: block;
   clear: both; }
@@ -667,3 +667,215 @@ h6 {
 .numbers__text {
   font-size: 12px;
   text-transform: uppercase; }
+
+.work {
+  height: 700px; }
+
+.work__blocks {
+  height: 600px; }
+
+.work__list {
+  height: 100%;
+  width: 100%; }
+
+.work__item {
+  float: left;
+  height: 50%;
+  width: 25%; }
+
+.review {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  .review:hover .review__hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+
+.review__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.review__hover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../img/icons/look.png") center center no-repeat;
+  background-color: rgba(20, 20, 20, 0.85);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.work__load {
+  height: 100px;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding-top: 40px; }
+
+.work__btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #8e8e8e;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .work__btn:hover {
+    color: #10c9c3; }
+
+.process {
+  height: 930px;
+  padding-top: 100px;
+  text-align: center; }
+
+.process__title {
+  font-size: 30px;
+  color: #191919;
+  margin-bottom: 40px; }
+
+.process__text {
+  font-family: 'nunito_sansregular';
+  width: 500px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #787878;
+  line-height: 24px;
+  margin-bottom: 60px; }
+
+.process__video {
+  height: 570px;
+  width: 100%; }
+
+.video {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.video__btn {
+  top: 55%;
+  left: 50%;
+  margin-left: -42px;
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: url("../img/icons/arrow.png") center center no-repeat #10c9c3; }
+
+.services {
+  height: 535px;
+  background-color: #f5f5f5;
+  padding-top: 100px; }
+
+.services__list {
+  margin-left: -62.5px;
+  font-size: 0; }
+  .services__list * {
+    font-size: 14px; }
+
+.services__item {
+  width: 230px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 62.5px;
+  margin-bottom: 55px; }
+
+.services__img {
+  height: 45px;
+  width: 45px;
+  margin: 0 auto;
+  background: center center no-repeat;
+  margin-bottom: 30px; }
+
+.services__title {
+  font-size: 12px;
+  color: #191919;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+
+.services__text {
+  font-family: 'nunito_sansregular';
+  font-size: 16px;
+  line-height: 24px;
+  color: #787878; }
+
+.services__img_diamond {
+  background-image: url("../img/icons/diamond.png"); }
+
+.services__img_arc {
+  background-image: url("../img/icons/arc.png"); }
+
+.services__img_phone {
+  background-image: url("../img/icons/phone.png"); }
+
+.services__img_joy {
+  background-image: url("../img/icons/joy.png"); }
+
+.services__img_plane {
+  background-image: url("../img/icons/plane.png"); }
+
+.services__img_star {
+  background-image: url("../img/icons/star-black.png"); }
+
+.services__img_wand {
+  background-image: url("../img/icons/wand.png"); }
+
+.services__img_bucket {
+  background-image: url("../img/icons/bucket.png"); }
+
+.testimonials {
+  height: 500px;
+  background-color: #10c9c3;
+  text-align: center;
+  padding-top: 180px; }
+
+.container {
+  position: relative; }
+
+.testimonials__item {
+  width: 900px;
+  margin: 0 auto;
+  color: #fff; }
+
+.testimonials__blockquote {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 30px; }
+
+.testimonials__author {
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.testimonials__controls {
+  position: absolute;
+  left: 50%;
+  margin-left: -11px;
+  bottom: -100px; }
+
+.testimonials__controls-item {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #b0e8e6;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  cursor: pointer; }
+  .testimonials__controls-item:hover {
+    background-color: #fff; }
+
+.active {
+  width: 10px;
+  height: 10px;
+  background-color: #fff; }
