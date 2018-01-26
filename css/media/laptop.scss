@@ -1,3 +1,123 @@
 @media screen and (max-width: 992px) {
+	.container {
+		width: 690px;
+	}
 
+	.header__top {
+    padding: 30px 0;
+	}
+
+	// .menu__list {
+	// 	display: none;
+	// }
+
+	// #touch-menu {
+	// 	display: block;
+	// }
+
+	.nav__label {
+		display: block;
+		cursor: pointer;
+	}
+
+	.menu {
+		display: none;
+		text-align: center;
+		width: 100%;
+
+	}
+
+	.menu__item {
+		display: block;
+		margin-left: 0;
+		border-bottom: 1px solid #eaeaeb;
+	}
+
+	#toggle:checked + .menu {
+		display: block;
+	}
+
+	.skills {
+		background-color: #f9f9f9;
+	}
+
+	.skills__container {
+		width: 690px;
+		margin: 0 auto;
+	}
+
+	.skills__left {
+		text-align: center;
+		width: 100%;
+	}
+
+	.skills__right {
+		display: none;
+	}
+
+	.skills__info,
+	.skills__list {
+		width: 100%;
+	}
+
+	.skills__line-first {
+		width: 517.5px;
+	}
+
+	.skills__line-second {
+		width: 621px;
+	}
+
+	.skills__line-third {
+		width: 448.5px;
+	}
+
+	.numbers {
+		padding-top: 46px;
+	}
+
+	.numbers__item {
+    width: 49%;
+    margin-bottom: 40px;
+	}
+
+	.video__btn {
+		width: 75px;
+		height: 75px;
+	}
+
+	.services {
+		padding-top: 57px;
+	}
+
+	.services__list {
+    margin-left: -7.5px;
+	}
+
+	.services__item {
+    width: 165px;
+    margin-left: 7.5px;
+	}
+
+	.services__text {
+		font-size: 14px;
+	}
+
+	.testimonials {
+		padding-top: 120px;
+	}
+
+	.testimonials__item {
+    width: 100%;
+	}
+
+	.footer {
+		font-size: 14px;
+	}
+
+	.contacts,
+	.links,
+	.socials {
+		margin-left: 0;
+	}
 }

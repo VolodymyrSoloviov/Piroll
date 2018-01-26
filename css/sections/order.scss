@@ -58,6 +58,14 @@
 	resize: none;
 }
 
+.message-erorr {
+	color: #ff0000;
+}
+
+.message-success {
+	color: #008000;
+}
+
 .form__submit {
 	border: 0;
 	outline: none;
@@ -73,3 +81,4 @@
 		background-color: #1fada8;
 	}
 }
+

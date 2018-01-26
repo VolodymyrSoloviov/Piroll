@@ -41,4 +41,9 @@
 	border-radius: 50%;
 	cursor: pointer;
 	background: url("../img/icons/arrow.png") center center no-repeat #10c9c3;
+	transition: .3s;
+
+	&:hover {
+		transform: scale(1.2);
+	}
 }

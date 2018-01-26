@@ -23,18 +23,9 @@
 	vertical-align: middle;
 }
 
-.clients__item_handmade {
-	background-image: url("../img/content/clients/handmade.png");
-}
-
-.clients__item_mountain {
-	background-image: url("../img/content/clients/mountain.png");
-}
-
-.clients__item_collection {
-	background-image: url("../img/content/clients/collection.png");
-}
-
-.clients__item_mountainbike {
-	background-image: url("../img/content/clients/mountainbike.png");
+//цикл
+@each $clients__item in (handmade, mountain, collection, mountainbike) {
+	.clients__item_#{$clients__item} {
+		background-image: url("../img/content/clients/#{$clients__item}.png");
+	}
 }

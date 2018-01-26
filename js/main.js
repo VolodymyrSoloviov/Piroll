@@ -1,7 +1,161 @@
-var myVideo = document.getElementById("video"); 
-	function playPause() { 
-    if (myVideo.paused) 
-       	 myVideo.play(); 
-    else 
-        myVideo.pause(); 
-	} 
+$(function () {
+
+var myVideo = document.getElementById("video");
+
+	$('.video__btn').on('click', function(e) {
+		e.preventDefault();
+			var $this = $(this);
+			
+			setTimeout(function() {
+    		if (myVideo.paused) {
+       		myVideo.play();
+       	 		$this.css({
+       	 			'display' : 'none'
+       	 		})
+    		} else {
+         		myVideo.pause();
+      		}
+      }, 100);
+	});
+
+	$(document).on('click', function(e) {
+		var $this = $(e.target);
+		
+		if(myVideo.play) {
+			myVideo.pause();
+			$('.video__btn').css({
+				'display' : 'block'
+			})
+		}
+
+	});
+
+});
+
+//slider for section testimonials
+
+$(function () {
+	$('.testimonials__list').owlCarousel({
+		items : 1,
+		nav: true,
+		loop: true,
+		startPosition: 1
+	});
+});
+
+//slider for section clients
+
+$(function () {
+	$('.clients__list').owlCarousel({
+		items : 5,
+		loop: true,
+		dots: false,
+		responsive: {
+			0: {
+				items : 2
+			},
+			450: {
+				items : 3
+			},
+			770: {
+				items: 5
+			}
+		}
+	});
+
+
+});
+
+//smooth scrolling
+
+function slowScroll (id) {
+	var offset = 0;
+	$('html, body').animate ({
+		scrollTop: $(id).offset ().top - offset
+	}, 500);
+	return false;
+}
+
+//headhesive
+
+//var header = new Headhesive('.header__top');
+
+//check form
+
+$(document).ready (function () {
+	$("#done").click (function () {
+		$('#message-erorr').hide ();
+		var name = $("#name").val(),
+				email = $("#email").val(),
+				subject = $("#subject").val(),
+				message = $("#message").val(),
+				fail = "";
+
+		if (name.length < 3)
+			fail = "Name less than three characters"; 
+		else if (email.split ('@').length - 1 == 0 || email.split ('.').length - 1 == 0)
+			fail = "You have entered an incorrect email";
+		else if (subject.length < 5)
+			fail = "message subject is at least 5 characters long";
+		else if (message.length < 10)
+			fail = "message at least 10 characters";
+
+		if (fail != "") {
+			$('#message-erorr').html (fail + "<div class='clear'><br></div>");
+			$('#message-erorr').show ();
+			return false;
+		}
+
+		$.ajax ({
+			url: '../ajax/feedback.php',
+			type: 'POST',
+			cache: false,
+			data: {'name': name, 'email': email, 'subject': subject, 'message': message},
+			dataType: 'html',
+			success: function (data) {
+				$('#message-success').html (data + "<div class='clear'><br></div>");
+				$('#message-success').show ();
+			}
+		});
+	});
+});
+
+//adaptive menu
+
+
+// $(document).ready(function() {
+// 	var touch = $('#touch-menu');
+// 	var menu = $('.menu__list');
+
+// 	$(touch).on('click', function(e) {
+// 		e.preventDefault();
+
+// 		menu.slideToggle();
+// 	});
+
+// 	$(window).resize(function() {
+// 		var wid = $(window).width();
+
+// 		if(wid > 760 && menu.is(':hidden')) {
+// 			menu.removeAttr('style');
+// 		}
+// 	});
+// });
+
+//button up
+
+$(function () {
+	$('.fixed-btn').on('click', function() {
+		$('html, body').animate({
+			'scrollTop' : 0
+		}, 1000);
+	});
+
+	$(window).scroll(function() {
+		if($(window).scrollTop() > 250) {
+			$('.fixed-btn').addClass('fixed-btn__active');
+		} else {
+			$('.fixed-btn').removeClass('fixed-btn__active');
+		}
+	});
+});

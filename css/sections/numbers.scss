@@ -1,5 +1,5 @@
 .numbers {
-	height: 240px;
+	min-height: 240px;
 	background-color: #10c9c3;
 	padding-top: 102px;
 }
@@ -33,20 +33,11 @@
 	background: center center no-repeat;
 }
 
-.numbers__icon_portfolio {
-	background-image: url("../img/icons/portfolio.png");
-}
-
-.numbers__icon_clock {
-	background-image: url("../img/icons/clock.png");
-}
-
-.numbers__icon_star {
-	background-image: url("../img/icons/star.png");
-}
-
-.numbers__icon_like {
-	background-image: url("../img/icons/like.png");
+//цикл
+@each $numbers__icon in (portfolio, clock, star, like) {
+	.numbers__icon_#{$numbers__icon} {
+		background-image: url("../img/icons/#{$numbers__icon}.png");
+	}
 }
 
 .numbers__amount {

@@ -1,5 +1,5 @@
 .services {
-	height: 535px;
+	min-height: 535px;
 	background-color: #f5f5f5;
 	padding-top: 100px;
 }
@@ -16,6 +16,7 @@
 .services__item {
 	width: 230px;
 	display: inline-block;
+	vertical-align: top;
 	text-align: center;
 	margin-left: 62.5px;
 	margin-bottom: 55px;
@@ -44,34 +45,8 @@
 	color: $gray;
 }
 
-.services__img_diamond {
-	background-image: url("../img/icons/diamond.png");
-}
-
-.services__img_arc {
-	background-image: url("../img/icons/arc.png");
-}
-
-.services__img_phone {
-	background-image: url("../img/icons/phone.png");
-}
-
-.services__img_joy {
-	background-image: url("../img/icons/joy.png");
-}
-
-.services__img_plane {
-	background-image: url("../img/icons/plane.png");
-}
-
-.services__img_star {
-	background-image: url("../img/icons/star-black.png");
-}
-
-.services__img_wand {
-	background-image: url("../img/icons/wand.png");
-}
-
-.services__img_bucket {
-	background-image: url("../img/icons/bucket.png");
+@each $services__img in (diamond, arc, phone, joy, plane, star-black, wand, bucket) {
+	.services__img_#{$services__img} {
+		background-image: url("../img/icons/#{$services__img}.png");
+	}
 }

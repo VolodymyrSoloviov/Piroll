@@ -4,57 +4,66 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Шаблон</title>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="maincontent">
-			<div class="section home">
+			<div class="section home" id="home">
 				<div class="header">
 					<div class="container">
 						<div class="header__top">
-							<div class="logo">
-								<a href="#" class="logo__link"></a>
+							<div class="container">
+								
+								<!-- <a href="javascript:void(0)" id="touch-menu">Menu</a> -->
+								<div class="nav">
+									<div class="logo">
+										<a href="javascript:void(0)" onclick="slowScroll('#home')" class="logo__link"></a>
+									</div>
+									<label class="nav__label" for="toggle">&#9776;</label>
+									<input class="nav__input" type="checkbox" id="toggle">					
+									<nav class="menu">
+										<ul class="menu__list">
+											<li class="menu__item">
+												<a href="javascript:void(0)" onclick="slowScroll('#home')" class="menu__link active">home</a>
+									  	</li>
+									  	<li class="menu__item">
+										  	<a href="javascript:void(0)" onclick="slowScroll('#about')" class="menu__link">about</a>
+									  	</li>
+									  	<li class="menu__item">
+										  	<a href="javascript:void(0)" onclick="slowScroll('#work')" class="menu__link">work</a>
+									  	</li>
+									  	<li class="menu__item">
+										  	<a href="javascript:void(0)" onclick="slowScroll('#process')" class="menu__link">process</a>
+									  	</li>
+									  	<li class="menu__item">
+										  	<a href="javascript:void(0)" onclick="slowScroll('#services')" class="menu__link">services</a>
+									  	</li>
+									  	<li class="menu__item">
+										  	<a href="javascript:void(0)" onclick="slowScroll('#testimonials')" class="menu__link">testimonials</a>
+									  	</li>
+									  	<li class="menu__item">
+										  	<a href="javascript:void(0)" onclick="slowScroll('#contact')" class="menu__link">contact</a>
+									  	</li>
+								  	</ul>
+							  	</nav>
+							  </div> <!-- nav -->
 							</div>
-							<div class="menu">
-								<ul class="menu__list">
-									<li class="menu__item">
-										<a href="#" class="menu__link active">home</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">about</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">work</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">process</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">services</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">testimonials</a>
-									</li>
-									<li class="menu__item">
-										<a href="#" class="menu__link">contact</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+						</div> <!-- end header-top -->
 						<div class="banner">
 							<h1 class="banner__title">We Design and Develop</h1>
 							<div class="banner__text">We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</div>
 							<div class="banner__button">
-								<a href="#" class="banner__btn">contact us</a>
+								<a href="javascript:void(0)" onclick="slowScroll('#contact')" class="banner__btn">contact us</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div> <!-- end home -->
 
-			<section class="section about">
+			<section class="section about" id="about">
 				<div class="container">
 					<div class="about__info">
 						<h2 class="about__title">About Us</h2>
@@ -65,6 +74,7 @@
 			</section> <!-- end about -->
 
 			<section class="section skills">
+					<div class="skills__container">
 					<div class="skills__left">
 						<div class="skills__info">
 							<div class="skills__title">Professional Skills</div>
@@ -85,6 +95,7 @@
 						</div>
 					</div>
 					<div class="skills__right"></div>
+					</div>
 			</section> <!-- end skills -->
 
 			<section class="section numbers">
@@ -122,13 +133,13 @@
 				</div>
 			</section> <!-- end numbers -->
 
-			<section class="section work">
+			<section class="section work" id="work">
 				<div class="work__blocks">
 					<ul class="work__list">
 						<li class="work__item">
 							<div class="review">
 								<a href="#" class="review__link">
-									<div class="review__photo" style="background-image: url(img/content/reviews/1.jpg)"></div>
+									<div class="review__photo review__photo_1"></div>
 									<div class="review__hover"></div>
 								</a>
 							</div>
@@ -136,7 +147,7 @@
 						<li class="work__item">
 							<div class="review">
 								<a href="#" class="review__link">
-									<div class="review__photo" style="background-image: url(img/content/reviews/2.jpg)"></div>
+									<div class="review__photo review__photo_2"></div>
 									<div class="review__hover"></div>
 								</a>
 							</div>
@@ -144,7 +155,7 @@
 						<li class="work__item">
 							<div class="review">
 								<a href="#" class="review__link">
-									<div class="review__photo" style="background-image: url(img/content/reviews/3.jpg)"></div>
+									<div class="review__photo review__photo_3"></div>
 									<div class="review__hover"></div>
 								</a>
 							</div>
@@ -152,7 +163,7 @@
 						<li class="work__item">
 							<div class="review">
 								<a href="#" class="review__link">
-									<div class="review__photo" style="background-image: url(img/content/reviews/4.jpg)"></div>
+									<div class="review__photo review__photo_4"></div>
 									<div class="review__hover"></div>
 								</a>
 							</div>
@@ -160,7 +171,7 @@
 						<li class="work__item">
 							<div class="review">
 								<a href="#" class="review__link">
-									<div class="review__photo" style="background-image: url(img/content/reviews/5.jpg)"></div>
+									<div class="review__photo review__photo_5"></div>
 									<div class="review__hover"></div>
 								</a>
 							</div>
@@ -168,7 +179,7 @@
 						<li class="work__item">
 							<div class="review">
 								<a href="#" class="review__link">
-									<div class="review__photo" style="background-image: url(img/content/reviews/6.jpg)"></div>
+									<div class="review__photo review__photo_6"></div>
 									<div class="review__hover"></div>
 								</a>
 							</div>
@@ -176,7 +187,7 @@
 						<li class="work__item">
 							<div class="review">
 								<a href="#" class="review__link">
-									<div class="review__photo" style="background-image: url(img/content/reviews/7.jpg)"></div>
+									<div class="review__photo review__photo_7"></div>
 									<div class="review__hover"></div>
 								</a>
 							</div>
@@ -184,7 +195,7 @@
 						<li class="work__item">
 							<div class="review">
 								<a href="#" class="review__link">
-									<div class="review__photo" style="background-image: url(img/content/reviews/8.jpg)"></div>
+									<div class="review__photo review__photo_8"></div>
 									<div class="review__hover"></div>
 								</a>
 							</div>
@@ -196,7 +207,7 @@
 				</div>
 			</section> <!-- end work -->
 
-			<section class="section process">
+			<section class="section process" id="process">
 				<div class="container">
 					<div class="process__info">
 						<h2 class="process__title">Our Work Process</h2>
@@ -206,12 +217,12 @@
 						<video class="video" id="video">
            		<source src="img/cars.mp4" type="video/mp4" />
        			</video>
-       			<div onclick="playPause()" class="video__btn"></div> 
+       			<a href="#" class="video__btn" id="videobtn"></a> 
 					</div>
 				</div>
 			</section> <!-- end process -->
 
-			<section class="section services">
+			<section class="section services" id="services">
 				<div class="container">
 					<ul class="services__list">
 						<li class="services__item">
@@ -240,7 +251,7 @@
 							<div class="services__text">Give won't after land fill creeping meat you, may</div>
 						</li>
 						<li class="services__item">
-							<div class="services__img services__img_star"></div>
+							<div class="services__img services__img_star-black"></div>
 							<h3 class="services__title">photography</h3>
 							<div class="services__text">Creepeth one seas cattle grass give moving saw give</div>
 						</li>
@@ -258,9 +269,21 @@
 				</div>
 			</section> <!-- end services -->
 
-			<section class="section testimonials">
+			<section class="section testimonials" id="testimonials">
 				<div class="container">
-					<ul class="testimonials__list">
+					<ul class="testimonials__list owl-carousel">
+						<li class="testimonials__item">
+							<blockquote class="testimonials__blockquote">
+							“ Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.”
+							</blockquote>
+							<div class="testimonials__author">Michael Hopkins</div>
+						</li>
+						<li class="testimonials__item">
+							<blockquote class="testimonials__blockquote">
+							“ Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.”
+							</blockquote>
+							<div class="testimonials__author">Michael Hopkins</div>
+						</li>
 						<li class="testimonials__item">
 							<blockquote class="testimonials__blockquote">
 							“ Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.”
@@ -268,24 +291,27 @@
 							<div class="testimonials__author">Michael Hopkins</div>
 						</li>
 					</ul>
-					<div class="testimonials__controls">
+					<!-- <div class="testimonials__controls">
 						<ul class="testimonials__controls-list">
-							<li class="testimonials__controls-item"></li>
-							<li class="testimonials__controls-item testimonials__active"></li>
-							<li class="testimonials__controls-item"></li>
+							<li class=" owl-dot"></li>
+							<li class=" owl-dottestimonials__active"></li>
+							<li class=" owl-dot"></li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
 			</section> <!-- end testimonials -->
 
 			<section class="section clients">
 				<div class="container">
-					<ul class="clients__list">
+					<ul class="clients__list owl-carousel">
 						<li class="clients__item clients__item_handmade"></li>
 						<li class="clients__item clients__item_mountain"></li>
 						<li class="clients__item clients__item_collection"></li>
 						<li class="clients__item clients__item_mountainbike"></li>
 						<li class="clients__item clients__item_handmade"></li>
+						<li class="clients__item clients__item_mountain"></li>
+						<li class="clients__item clients__item_collection"></li>
+						<li class="clients__item clients__item_mountainbike"></li>
 					</ul>
 				</div>
 			</section> <!-- end clients -->
@@ -294,19 +320,21 @@
 				<div class="container">
 					<h2 class="order__title">Need a Project?</h2>
 					<div class="order__text">Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</div>
-					<form action="" class="form" id="form">
+					<form class="form" id="form">
 						<div class="form__input-wrap">
-							<input type="text" class="form__input form__input_half" name="name" placeholder="Your Name">
-							<input type="email" class="form__input form__input_half" name="email" placeholder="Your Email">
+							<input type="text" class="form__input form__input_half" id="name" name="name" placeholder="Your Name">
+							<input type="email" class="form__input form__input_half" id="email" name="email" placeholder="Your Email">
 						</div>
-						<input type="text" class="form__input form__input_whole" name="title" placeholder="Your Title">
-						<textarea id="" class="form__textarea form__input_whole" name="comment" placeholder="Your Comment"></textarea>
-						<input type="submit" class="form__submit" name="" value="SEND MESSAGE">
+						<input type="text" class="form__input form__input_whole" id="subject" name="title" placeholder="Your Title">
+						<textarea class="form__textarea form__input_whole" id="message" name="comment" placeholder="Your Comment"></textarea>
+						<div id="message-erorr" class="message-erorr"></div>
+						<div id="message-success" class="message-success"></div>
+						<input type="button" class="form__submit" id="done" name="" value="SEND MESSAGE">
 					</form>
 				</div>
 			</section> <!-- end order -->
 
-			<section class="section last-section">
+			<section class="section last-section" id="contact">
 				<footer class="footer">
 					<div class="container">
 						<div class="copyright">
@@ -342,8 +370,12 @@
 			</section>
 		</div>
 	</div>
+	<div class="fixed-btn"></div>
 
-	<!-- <script src="bower_components/jQuery/dist/jquery.js"></script> -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
+	<script src="bower_components/Headhesive.js/dist/headhesive.js"></script>
+
 	<script src="js/main.js"></script>
 </body>
 </html>

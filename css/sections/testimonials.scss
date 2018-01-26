@@ -26,14 +26,16 @@
 	text-transform: uppercase;
 }
 
-.testimonials__controls {
-	position: absolute;
-	left: 50%;
-	margin-left: -11px;
-	bottom: -100px;
-}
+// .testimonials__controls {
+// 	position: absolute;
+// 	left: 50%;
+// 	margin-left: -11px;
+// 	bottom: -100px;
+// }
 
-.testimonials__controls-item {
+//Налаштування контролерів слайдера
+
+.owl-dot {
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;
@@ -48,8 +50,24 @@
 	}
 }
 
-.testimonials__active {
+.owl-dot.active {
+	width: 10px;
+	height: 10px;
+}
+
+.owl-nav {
+	display: none;
+}
+
+.owl-dots {
+	margin-top: 75px;
+}
+
+.owl-dot.active {
 	width: 10px;
 	height: 10px;
 	background-color: #fff;
 }
+
+
+
