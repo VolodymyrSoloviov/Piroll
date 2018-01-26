@@ -9,7 +9,7 @@
 	@extend %clearfix;
 }
 
-.nav { //new
+.nav { 
 	@extend %clearfix;
 	text-align: right;
 	height: 30px;
@@ -17,7 +17,7 @@
 	margin-bottom: 134px;
 }
 
-.nav__label { //new
+.nav__label { 
 	display: none;
 	font-size: 26px;
 	line-height: 30px;
@@ -25,7 +25,7 @@
 	float: right;
 }
 
-.nav__input { //new
+.nav__input { 
 	display: none;
 }
 
@@ -44,28 +44,6 @@
 	width: 31px;
 	background-image: url("../img/icons/logo.png");
 }
-
-// #touch-menu {
-// 	display: none;
-// 	float: right;
-// 	text-decoration: none;
-// 	color: $black;
-// 	transition: .3s;
-
-// 	&:hover {
-// 		color: #10c9c3;
-// 	}
-// }
-
-// .nav-burger__checkbox {
-// 	display: none;
-
-// 	&:checked {
-// 		~ .menu {
-// 			display: block;
-// 		}
-// 	}
-// }
 
 .menu {
 	float: right;
@@ -179,26 +157,3 @@
 .fixed-btn__active {
 	bottom: 50px;
 }
-
-//**fixed header**
-
-// .headhesive {
-// 	position: fixed;
-// 	width: 100%;
-// 	transform: translateY(-100%);
-// 	z-index: 10;
-// 	background-color: #fff;
-// 	transition: .3s;
-// }
-
-// .headhesive .menu__link.active {
-// 	color: $black;
-
-// 	&:hover {
-// 		color: #10c9c3;
-// 	}
-// }
-
-// .headhesive--stick {
-// 	transform: translateY(0);	
-// }
