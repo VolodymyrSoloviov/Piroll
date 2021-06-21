@@ -4,32 +4,23 @@
 }
 
 .numbers__list {
-	width: 100%;
-	text-align: justify;
-
-	&:after {
-		content: "";
-		width: 100%;
-		display: inline-block;
-		height: 0px;
-	}
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .numbers__item {
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	color: $white;
-}
-
-.numbers__icon,
-.numbers__info {
-	display: inline-block;
 }
 
 .numbers__icon {
 	height: 40px;
 	width: 40px;
-	margin-right: 28px;
-	background: center center no-repeat;
+	margin-right: 25px;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 //цикл
@@ -44,6 +35,6 @@
 }
 
 .numbers__text {
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase;
 }

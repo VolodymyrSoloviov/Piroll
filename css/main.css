@@ -802,18 +802,6 @@ h6 {
   background-color: #10c9c3;
 }
 
-.skills__line--first {
-  width: 75%;
-}
-
-.skills__line--second {
-  width: 90%;
-}
-
-.skills__line--third {
-  width: 65%;
-}
-
 .skills__right {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -826,31 +814,32 @@ h6 {
 }
 
 .numbers__list {
-  width: 100%;
-  text-align: justify;
-}
-.numbers__list:after {
-  content: "";
-  width: 100%;
-  display: inline-block;
-  height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .numbers__item {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
-}
-
-.numbers__icon,
-.numbers__info {
-  display: inline-block;
 }
 
 .numbers__icon {
   height: 40px;
   width: 40px;
-  margin-right: 28px;
-  background: center center no-repeat;
+  margin-right: 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .numbers__icon_portfolio {
@@ -874,7 +863,7 @@ h6 {
 }
 
 .numbers__text {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
