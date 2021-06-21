@@ -1,6 +1,6 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 767.98px) {
 	.container {
-		width: 480px;
+		max-width: 480px;
 	}
 
 	.fixed-btn {
@@ -17,25 +17,25 @@
 	.fixed-btn__active {
 		bottom: 30px;
 	}
-	
+
 	.banner {
-    float: none;
-    width: 100%;
-    text-align: center;
+		float: none;
+		width: 100%;
+		text-align: center;
 	}
 
 	.banner__button {
-    margin: 0 auto;
+		margin: 0 auto;
 	}
 
 	.about__info {
-    width: 100%;
+		width: 100%;
 	}
-	
+
 	.skills__container {
 		width: 480px;
 	}
-	
+
 	.skills__line-first {
 		width: 360px;
 	}
@@ -49,12 +49,12 @@
 	}
 
 	.work__item {
-    height: 25%;
-    width: 50%;
+		height: 25%;
+		width: 50%;
 	}
-	
+
 	.process {
-		height: 600px
+		height: 600px;
 	}
 
 	.process__text {
@@ -63,16 +63,16 @@
 	}
 
 	.process__video {
-    height: 370px;
+		height: 370px;
 	}
 
 	.video__btn {
 		top: 50%;
 		left: 50%;
 		width: 60px;
-    height: 60px;
-    margin-top: 30px;
-    margin-left: -30px;
+		height: 60px;
+		margin-top: 30px;
+		margin-left: -30px;
 	}
 
 	.services {
@@ -119,13 +119,13 @@
 	.form {
 		width: 100%;
 	}
-	
+
 	.form__input_half {
 		width: 100%;
 		float: none;
 		margin-left: 0;
 	}
-	
+
 	.copyright__title {
 		margin-bottom: 40px;
 	}

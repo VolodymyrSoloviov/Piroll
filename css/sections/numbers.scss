@@ -1,7 +1,6 @@
 .numbers {
-	min-height: 240px;
+	padding: 85px 0;
 	background-color: #10c9c3;
-	padding-top: 102px;
 }
 
 .numbers__list {
@@ -9,7 +8,7 @@
 	text-align: justify;
 
 	&:after {
-		content:"";
+		content: "";
 		width: 100%;
 		display: inline-block;
 		height: 0px;

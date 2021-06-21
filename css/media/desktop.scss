@@ -1,15 +1,19 @@
-@media screen and (max-width: 1210px) {
+@media (max-width: 1210px) {
 	.container {
-		width: 960px;
+		max-width: 960px;
 	}
 
-	.skills__container {
-		width: 960px;
-		margin: 0 auto;
+	.skills__left {
+		padding: 160px 10px 0 10px;
 	}
 
 	.skills__info {
+		max-width: 100%;
 		float: none;
+	}
+
+	.skills__list {
+		max-width: 100%;
 	}
 
 	.skills__line-first {
@@ -25,12 +29,12 @@
 	}
 
 	.services__list {
-    margin-left: -20px;
+		margin-left: -20px;
 	}
 
 	.services__item {
-    width: 220px;
-    margin-left: 20px;
+		width: 220px;
+		margin-left: 20px;
 	}
 
 	.contacts,

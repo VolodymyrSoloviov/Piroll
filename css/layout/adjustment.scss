@@ -2,7 +2,8 @@
 	box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
 	width: 100%;
 	height: 100%;
 }
@@ -10,10 +11,11 @@ html, body {
 body {
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'montserratmedium';
+	font-family: "montserratmedium";
 }
 
 .container {
+	max-width: 1170px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -26,7 +28,7 @@ body {
 
 .maincontent {
 	height: 100%;
-	transform: translate3d(0,0,0);
+	transform: translate3d(0, 0, 0);
 	transition: 1s;
 }
 

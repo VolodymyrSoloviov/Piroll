@@ -1,6 +1,6 @@
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
 	.container {
-		width: 95%;
+		max-width: 95%;
 	}
 
 	.fixed-btn {
@@ -12,7 +12,7 @@
 	.fixed-btn__active {
 		bottom: 10px;
 	}
-	
+
 	.banner__title {
 		font-size: 28px;
 	}
@@ -22,7 +22,7 @@
 	}
 
 	.banner__button {
-    width: 130px;
+		width: 130px;
 	}
 
 	.banner__btn {
@@ -31,7 +31,7 @@
 	}
 
 	.nav {
-		margin-bottom: 100px;	
+		margin-bottom: 100px;
 	}
 
 	.about__title {
@@ -47,7 +47,7 @@
 	}
 
 	.skills__container {
-    width: 320px;
+		width: 320px;
 	}
 
 	.skills__line-first {
@@ -79,20 +79,20 @@
 	.process__title {
 		font-size: 28px;
 	}
-	
+
 	.video__btn {
-    width: 44px;
-    height: 44px;
-    margin-top: 50px;
-    margin-left: -22px;
+		width: 44px;
+		height: 44px;
+		margin-top: 50px;
+		margin-left: -22px;
 	}
 
 	.process__video {
-    height: 349px;
+		height: 349px;
 	}
 
 	.services__item {
-    width: 100%;
+		width: 100%;
 	}
 
 	.testimonials__blockquote {
@@ -130,5 +130,4 @@
 	.socials__link {
 		display: block;
 	}
-		
 }
