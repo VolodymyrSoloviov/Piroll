@@ -493,10 +493,26 @@ h6 {
   font-weight: normal;
 }
 
-.form__input-wrap:after, .work__list:after, .skills:after {
+.form__input-wrap:after, .work__list:after {
   content: "";
   display: block;
   clear: both;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
 @font-face {
@@ -733,73 +749,75 @@ h6 {
   background-image: url("../img/icons/signature.png");
 }
 
-.skills {
-  height: 570px;
+.skills-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .skills__left {
-  float: left;
-  width: 50%;
-  height: 570px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 150px 20px;
   background-color: #f9f9f9;
-  padding-top: 164px;
 }
 
 .skills__info {
-  max-width: 585px;
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .skills__title {
   font-size: 30px;
-  color: #171717;
+  color: #191919;
   margin-bottom: 40px;
-}
-
-.skills__list {
-  max-width: 500px;
 }
 
 .skills__item {
   position: relative;
-  margin-bottom: 40px;
-  font-size: 12px;
+  margin: 0 0 40px 0;
+  font-size: 14px;
   text-transform: uppercase;
   color: #000;
   border-bottom: 3px solid #d8d8d8;
+}
+.skills__item:last-child {
+  margin: 0 0 0 0;
 }
 
 .skills__name {
   margin-bottom: 18px;
 }
 
-.skills__line-first,
-.skills__line-second,
-.skills__line-third {
+.skills__line {
   position: absolute;
   top: 100%;
   height: 3px;
   background-color: #10c9c3;
 }
 
-.skills__line-first {
-  width: 375px;
+.skills__line--first {
+  width: 75%;
 }
 
-.skills__line-second {
-  width: 450px;
+.skills__line--second {
+  width: 90%;
 }
 
-.skills__line-third {
-  width: 325px;
+.skills__line--third {
+  width: 65%;
 }
 
 .skills__right {
-  float: right;
-  width: 50%;
-  height: 570px;
-  background-image: url("../img/bg/skills-bg.jpg");
-  background-size: cover;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 
 .numbers {
