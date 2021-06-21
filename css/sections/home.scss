@@ -50,7 +50,7 @@
 
 .menu__link {
 	color: $black;
-	font-size: 14px;
+	font-size: 16px;
 	display: block;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -104,6 +104,7 @@
 	background-color: #10c9c3;
 	padding: 0 40px;
 	transition: 0.3s;
+	border-radius: 10px;
 
 	&:hover {
 		background-color: #1fada8;
