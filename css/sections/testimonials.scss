@@ -1,8 +1,7 @@
 .testimonials {
-	height: 500px;
+	padding: 180px 0 50px 0;
 	background-color: #10c9c3;
 	text-align: center;
-	padding-top: 180px;
 }
 
 .container {
@@ -10,7 +9,7 @@
 }
 
 .testimonials__item {
-	width: 900px;
+	max-width: 900px;
 	margin: 0 auto;
 	color: $white;
 }
@@ -22,7 +21,7 @@
 }
 
 .testimonials__author {
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase;
 }
 
@@ -61,6 +60,3 @@
 	height: 10px;
 	background-color: #fff;
 }
-
-
-
