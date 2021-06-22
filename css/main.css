@@ -1335,21 +1335,27 @@ h6 {
   background-color: #1fada8;
 }
 
-.last-section {
-  height: 285px;
-  background-color: #141414;
-  padding-top: 100px;
-}
-
 .footer {
+  padding: 85px 0;
   font-family: "nunito_sansregular";
   color: #bcbcbc;
   font-size: 15px;
+  background-color: #141414;
+}
+
+.footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .copyright {
-  width: 240px;
-  float: left;
+  max-width: 240px;
 }
 
 .copyright__title {
@@ -1363,9 +1369,13 @@ h6 {
 }
 
 .contacts {
-  float: left;
-  width: 180px;
-  margin-left: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contacts__email,
@@ -1380,15 +1390,16 @@ h6 {
 }
 
 .links {
-  float: left;
-  width: 180px;
-  margin-left: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.links__first,
-.links__second {
-  float: left;
-  width: 90px;
+.links-column {
+  margin-right: 30px;
+}
+.links-column:last-child {
+  margin-right: 0;
 }
 
 .links__link {
@@ -1401,9 +1412,13 @@ h6 {
 }
 
 .socials {
-  float: left;
-  width: 80px;
-  margin-left: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .socials__link {
