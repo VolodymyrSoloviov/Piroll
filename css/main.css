@@ -1016,6 +1016,7 @@ h6 {
 }
 
 .video {
+  display: block;
   position: relative;
   height: 100%;
   width: 100%;
@@ -1559,7 +1560,8 @@ h6 {
 }
 @media (max-width: 767.98px) {
   .container {
-    max-width: 480px;
+    max-width: none;
+    padding: 0 15px;
   }
 
   .fixed-btn {
@@ -1576,52 +1578,12 @@ h6 {
     bottom: 30px;
   }
 
-  .banner {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  .banner__button {
-    margin: 0 auto;
-  }
-
-  .about__info {
-    width: 100%;
-  }
-
-  .skills__container {
-    width: 480px;
-  }
-
-  .skills__line-first {
-    width: 360px;
-  }
-
-  .skills__line-second {
-    width: 432px;
-  }
-
-  .skills__line-third {
-    width: 312px;
-  }
-
-  .work__item {
-    height: 25%;
-    width: 50%;
-  }
-
-  .process {
-    height: 600px;
+  .skills__left {
+    padding: 35px 15px;
   }
 
   .process__text {
-    width: 100%;
-    margin-bottom: 0;
-  }
-
-  .process__video {
-    height: 370px;
+    margin: 0 0 20px 0;
   }
 
   .video__btn {
@@ -1633,18 +1595,14 @@ h6 {
     margin-left: -30px;
   }
 
-  .services {
-    padding-top: 25px;
-  }
-
   .services__list {
     margin-left: 0;
   }
 
   .services__item {
-    width: 50%;
-    margin-left: 0;
-    margin-bottom: 25px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
 
   .services__img {
@@ -1655,48 +1613,41 @@ h6 {
     margin-bottom: 10px;
   }
 
-  .services__text {
-    width: 200px;
-    margin: 0 auto;
-  }
-
   .testimonials__blockquote {
-    font-size: 21px;
     margin: 0;
     margin-bottom: 30px;
-  }
-
-  .order {
-    padding-top: 50px;
   }
 
   .order__text {
     width: 100%;
   }
 
-  .form {
-    width: 100%;
-  }
-
   .form__input_half {
-    width: 100%;
-    float: none;
-    margin-left: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 
-  .copyright__title {
-    margin-bottom: 40px;
+  .copyright {
+    max-width: 100%;
   }
 
-  .contacts {
-    margin-bottom: 27px;
+  .copyright,
+.contacts,
+.links,
+.socials {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin: 0 0 20px 0;
   }
 
-  .links {
-    display: none;
+  .links,
+.socials {
+    margin: 0 0 0 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 575.98px) {
   .container {
     max-width: 95%;
   }
