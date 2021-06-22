@@ -1,23 +1,27 @@
 .clients {
-	height: 200px;
-	padding-top: 65px;
+	padding: 65px 0 40px 0;
 }
 
 .clients__list {
 	width: 100%;
-  text-align: justify;
+	text-align: justify;
 
-  &:after {
-		content:"";
+	&:after {
+		content: "";
 		width: 100%;
 		display: inline-block;
 		height: 0px;
+	}
+
+	.owl-item {
+		display: flex;
+		justify-content: center;
 	}
 }
 
 .clients__item {
 	display: inline-block;
-	height: 72px;
+	height: 80px;
 	width: 130px;
 	background: center center no-repeat;
 	vertical-align: middle;
