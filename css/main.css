@@ -1159,7 +1159,7 @@ h6 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #b0e8e6;
+  background-color: #b0e8e6 !important;
   display: inline-block;
   vertical-align: middle;
   margin-right: 4px;
@@ -1168,10 +1168,10 @@ h6 {
 .owl-dot:hover {
   background-color: #fff;
 }
-
 .owl-dot.active {
   width: 10px;
   height: 10px;
+  background-color: #fff !important;
 }
 
 .owl-nav {
@@ -1180,12 +1180,6 @@ h6 {
 
 .owl-dots {
   margin-top: 75px;
-}
-
-.owl-dot.active {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
 }
 
 .clients {
