@@ -1,0 +1,19 @@
+{
+  "name": "piroll",
+  "version": "1.0.0",
+  "description": "Piroll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolodymyrSoloviov/Piroll.git"
+  },
+  "author": "Volodymyr Soloviov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VolodymyrSoloviov/Piroll/issues"
+  },
+  "homepage": "https://github.com/VolodymyrSoloviov/Piroll#readme"
+}
