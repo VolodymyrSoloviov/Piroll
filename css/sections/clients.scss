@@ -3,28 +3,17 @@
 }
 
 .clients__list {
-	width: 100%;
-	text-align: justify;
-
-	&:after {
-		content: "";
-		width: 100%;
-		display: inline-block;
-		height: 0px;
-	}
-
 	.owl-item {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 }
 
 .clients__item {
-	display: inline-block;
 	height: 80px;
 	width: 130px;
 	background: center center no-repeat;
-	vertical-align: middle;
 }
 
 //цикл

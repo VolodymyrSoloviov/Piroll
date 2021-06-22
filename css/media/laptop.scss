@@ -3,8 +3,26 @@
 		max-width: 690px;
 	}
 
+	//header********************
+
+	.header {
+		padding: 0 0 35px 0;
+	}
+
 	.header__top {
-		padding: 30px 0;
+		margin: 0 0 0 0;
+	}
+
+	.header__bottom {
+		justify-content: center;
+	}
+
+	.banner {
+		max-width: 100%;
+	}
+
+	.banner__btn {
+		line-height: 50px;
 	}
 
 	.nav__label {
@@ -28,48 +46,52 @@
 		display: block;
 	}
 
-	.skills {
-		background-color: #f9f9f9;
+	//about********************
+
+	.about {
+		padding: 35px 0;
 	}
 
-	.skills__container {
-		width: 690px;
-		margin: 0 auto;
-	}
+	//skills********************
 
 	.skills__left {
-		text-align: center;
-		width: 100%;
+		flex: 0 0 100%;
+		padding: 35px 20px;
 	}
 
 	.skills__right {
 		display: none;
 	}
 
-	.skills__info,
-	.skills__list {
-		width: 100%;
-	}
-
-	.skills__line-first {
-		width: 517.5px;
-	}
-
-	.skills__line-second {
-		width: 621px;
-	}
-
-	.skills__line-third {
-		width: 448.5px;
-	}
+	//numbers********************
 
 	.numbers {
-		padding-top: 46px;
+		padding: 35px 0;
+	}
+
+	.numbers__list {
+		margin: 0 0 -40px 0;
 	}
 
 	.numbers__item {
-		width: 49%;
-		margin-bottom: 40px;
+		flex: 0 0 49%;
+		margin: 0 0 40px 0;
+	}
+
+	//work********************
+
+	.work__item {
+		flex: 0 0 50%;
+	}
+
+	.work__btn {
+		line-height: 50px;
+	}
+
+	//process********************
+
+	.process {
+		padding: 35px 0;
 	}
 
 	.video__btn {
@@ -77,38 +99,52 @@
 		height: 75px;
 	}
 
+	//services********************
+
 	.services {
-		padding-top: 57px;
+		padding: 35px 0;
 	}
 
 	.services__list {
-		margin-left: -7.5px;
+		margin: 0 0 -30px 0;
 	}
 
 	.services__item {
-		width: 165px;
-		margin-left: 7.5px;
+		flex: 0 0 33.333%;
+		margin: 0 0 30px 0;
 	}
 
-	.services__text {
-		font-size: 14px;
-	}
+	//testimonials********************
 
 	.testimonials {
-		padding-top: 120px;
+		padding: 35px 0;
 	}
 
-	.testimonials__item {
-		width: 100%;
+	.testimonials__list {
+		.owl-dots {
+			margin: 35px 0 0 0;
+		}
 	}
+
+	//clients********************
+
+	.clients {
+		padding: 35px 0;
+	}
+
+	//order********************
+
+	.order {
+		padding: 35px 0;
+	}
+
+	.form__submit {
+		line-height: 50px;
+	}
+
+	//footer********************
 
 	.footer {
-		font-size: 14px;
-	}
-
-	.contacts,
-	.links,
-	.socials {
-		margin-left: 0;
+		padding: 35px 0;
 	}
 }

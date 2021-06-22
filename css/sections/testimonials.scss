@@ -27,31 +27,33 @@
 
 //Налаштування контролерів слайдера
 
-.owl-dot {
-	width: 6px;
-	height: 6px;
-	border-radius: 50%;
-	background-color: #b0e8e6 !important;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 4px;
-	cursor: pointer;
+.testimonials__list {
+	.owl-dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background-color: #b0e8e6 !important;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 4px;
+		cursor: pointer;
 
-	&:hover {
-		background-color: #fff;
+		&:hover {
+			background-color: #fff;
+		}
+
+		&.active {
+			width: 10px;
+			height: 10px;
+			background-color: #fff !important;
+		}
 	}
 
-	&.active {
-		width: 10px;
-		height: 10px;
-		background-color: #fff !important;
+	.owl-nav {
+		display: none;
 	}
-}
 
-.owl-nav {
-	display: none;
-}
-
-.owl-dots {
-	margin-top: 75px;
+	.owl-dots {
+		margin-top: 75px;
+	}
 }
