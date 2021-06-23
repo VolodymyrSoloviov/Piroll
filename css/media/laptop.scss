@@ -13,6 +13,19 @@
 		margin: 0 0 0 0;
 	}
 
+	.logo {
+		position: relative;
+		z-index: 3;
+	}
+
+	.menu__link {
+		font-size: 14px;
+	}
+
+	.menu__item {
+		margin: 0 0 0 25px;
+	}
+
 	.header__bottom {
 		justify-content: center;
 	}
@@ -23,27 +36,6 @@
 
 	.banner__btn {
 		line-height: 50px;
-	}
-
-	.nav__label {
-		display: block;
-		cursor: pointer;
-	}
-
-	.menu {
-		display: none;
-		text-align: center;
-		width: 100%;
-	}
-
-	.menu__item {
-		display: block;
-		margin-left: 0;
-		border-bottom: 1px solid #eaeaeb;
-	}
-
-	#toggle:checked + .menu {
-		display: block;
 	}
 
 	//about********************

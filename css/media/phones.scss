@@ -1,8 +1,5 @@
 @media (max-width: 575.98px) {
-	.container {
-		max-width: 95%;
-	}
-
+	//fixed-btn********************
 	.fixed-btn {
 		right: 10px;
 		width: 35px;
@@ -13,71 +10,99 @@
 		bottom: 10px;
 	}
 
+	//header********************
+
+	.header__wrap {
+		&::before {
+			height: 55px;
+		}
+	}
+
 	.banner__title {
-		font-size: 28px;
+		font-size: 36px;
 	}
 
 	.banner__text {
-		font-size: 14px;
-	}
-
-	.banner__button {
-		width: 130px;
+		font-size: 16px;
 	}
 
 	.banner__btn {
-		padding: 15px;
-		font-size: 10px;
+		text-align: center;
+		line-height: 45px;
+		padding: 0 30px;
 	}
 
-	.nav {
-		margin-bottom: 100px;
+	//about********************
+
+	.about {
+		padding: 15px 0;
 	}
 
 	.about__title {
 		font-size: 28px;
+		margin: 0 0 15px 0;
 	}
 
 	.about__text {
 		font-size: 14px;
+		margin: 0 0 15px 0;
 	}
+
+	//skills********************
 
 	.skills__title {
 		font-size: 28px;
+		margin: 0 0 15px 0;
 	}
 
-	.skills__container {
-		width: 320px;
+	.skills__left {
+		padding: 15px;
 	}
 
-	.skills__line-first {
-		width: 240px;
+	.skills__item {
+		margin: 0 0 15px 0;
 	}
 
-	.skills__line-second {
-		width: 288px;
-	}
-
-	.skills__line-third {
-		width: 208px;
-	}
-
-	.numbers__item {
-		width: 100%;
-	}
+	//numbers********************
 
 	.numbers {
-		padding: 40px 0;
+		padding: 15px 0;
 	}
 
 	.numbers__list {
-		&:after {
-			display: block;
-		}
+		margin: 0 0 -20px 0;
+	}
+
+	.numbers__item {
+		flex: 0 0 100%;
+		margin: 0 0 20px 0;
+	}
+
+	//work********************
+
+	.work__item {
+		flex: 0 0 100%;
+	}
+
+	.work__btn {
+		text-align: center;
+		line-height: 45px;
+		padding: 0 30px;
+	}
+
+	//process********************
+
+	.process {
+		padding: 15px 0;
 	}
 
 	.process__title {
 		font-size: 28px;
+		margin: 0 0 15px 0;
+	}
+
+	.process__text {
+		margin: 0 0 15px 0;
 	}
 
 	.video__btn {
@@ -87,47 +112,85 @@
 		margin-left: -22px;
 	}
 
-	.process__video {
-		height: 349px;
+	//services********************
+
+	.services {
+		padding: 15px 0;
+	}
+
+	.services__list {
+		margin: 0 0 -20px 0;
 	}
 
 	.services__item {
-		width: 100%;
+		flex: 0 0 100%;
+		margin: 0 0 20px 0;
+	}
+
+	//testimonials********************
+
+	.testimonials {
+		padding: 15px 0;
+	}
+
+	.testimonials__list {
+		.owl-dots {
+			margin: 20px 0 0 0;
+		}
 	}
 
 	.testimonials__blockquote {
+		margin: 0 0 20px 0;
 		font-size: 16px;
 		line-height: 26px;
 	}
 
+	//clients********************
+
+	.clients {
+		padding: 15px 0;
+	}
+
+	//order********************
+
+	.order {
+		padding: 15px 0;
+	}
+
 	.order__title {
 		font-size: 28px;
+		margin: 0 0 15px 0;
+	}
+
+	.order__text {
+		margin: 0 0 15px 0;
+	}
+
+	.form__input,
+	.form__textarea {
+		margin: 0 0 15px 0;
 	}
 
 	.form__submit {
-		padding: 15px;
-		font-size: 10px;
+		text-align: center;
+		line-height: 45px;
+		padding: 0 30px;
 	}
 
-	.copyright {
-		width: 50%;
+	//footer********************
+	.footer {
+		padding: 15px 0;
 	}
 
-	.copyright__title {
-		margin-bottom: 10px;
-	}
-
-	.contacts {
-		display: none;
+	.copyright,
+	.contacts,
+	.links,
+	.socials {
+		flex: 0 0 100%;
+		margin: 0 0 20px 0;
 	}
 
 	.socials {
-		width: 50%;
-		float: right;
-		text-align: right;
-	}
-
-	.socials__link {
-		display: block;
+		margin: 0 0 0 0;
 	}
 }
